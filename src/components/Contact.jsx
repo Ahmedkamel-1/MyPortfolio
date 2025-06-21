@@ -44,7 +44,6 @@ const Contact = () => {
 
     setLoading(true);
 
-
     emailjs
       .send(
         'service_7zlkzpq',
@@ -54,7 +53,7 @@ const Contact = () => {
           to_name: "Ahmed Kamel",
           from_email: form.email,
           to_email: "ahmedkamel555556@gmail.com",
-          message: form.message,
+          message: `${form.message}\n\n---\nSent from: ${form.name} (${form.email})`,
         },
         '-zJs8oeAWLW6xpiPt'
       )
@@ -69,6 +68,7 @@ const Contact = () => {
             message: "",
           });
         },
+        
         (error) => {
           setLoading(false);
           console.error("FAILED...", error);
@@ -78,7 +78,6 @@ const Contact = () => {
             message: error.message,
             name: error.name
           });
-          
           // More specific error messages
           if (error.status === 400) {
             alert("Bad request. Please check your form data and try again.");

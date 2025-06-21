@@ -44,15 +44,15 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
+        title: "FullStack Developer",
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "Front-End Developer Reactjs",
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "Back-End Developer Nodejs",
         icon: backend,
     }
 ];
@@ -110,7 +110,7 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
+        title: "Front-End Developer React.js",
         company_name: "Projects",
         icon: react,
         iconBg: "#383E56",
@@ -121,7 +121,7 @@ const experiences = [
     ],
     },
     {
-        title: "Back End Developer",
+        title: "Back End Developer Nodejs",
         company_name: "Projects",
         icon: MongoDB,
         iconBg: "#E6DEDD",
